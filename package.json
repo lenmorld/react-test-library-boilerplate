@@ -1,0 +1,42 @@
+{
+	"name": "react_test_rtl",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app/index.jsx",
+	"scripts": {
+		"test": "jest --verbose --env=jest-environment-jsdom-sixteen",
+		"dev": "webpack-dev-server --hot --inline"
+	},
+	"author": "lenmorld",
+	"license": "MIT",
+	"dependencies": {
+		"express": "^4.16.3",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.1.0",
+		"@babel/preset-env": "^7.5.4",
+		"@babel/preset-react": "^7.0.0",
+		"@testing-library/jest-dom": "^5.11.4",
+		"@testing-library/react": "^11.0.4",
+		"babel-cli": "^6.26.0",
+		"babel-loader": "^8.0.2",
+		"babel-preset-env": "^1.7.0",
+		"jest": "^24.9.0",
+		"jest-environment-jsdom-sixteen": "^1.0.3",
+		"webpack": "^4.19.1",
+		"webpack-cli": "^3.1.0",
+		"webpack-dev-server": "^3.11.0"
+	},
+	"jest": {
+		"moduleFileExtensions": [
+			"js",
+			"jsx"
+		],
+		"testPathIgnorePatterns": [
+			"/node_modules/",
+			"/public/"
+		]
+	}
+}
