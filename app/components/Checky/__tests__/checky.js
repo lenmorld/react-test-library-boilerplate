@@ -29,7 +29,7 @@ describe.only("Checky", () => {
         })
 
         // screen.debug()
-        expect(screen.queryByLabelText("true")).toBeInTheDocument();
+        expect(screen.getByLabelText("true")).toBeInTheDocument();
     });
 
     it("updates state with delay - RTL async utils", async () => {

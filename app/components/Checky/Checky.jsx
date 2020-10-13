@@ -13,7 +13,6 @@ const Checky = () => {
     return (
         <div>
             <h2>Checky</h2>
-            <h4>async state change: 2 second delay</h4>
             <input type="checkbox" onChange={handleCheck} id="checky2" />
             <label htmlFor="checky2">{isChecked.toString()}</label>
         </div>
