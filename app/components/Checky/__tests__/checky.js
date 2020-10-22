@@ -1,7 +1,7 @@
 import React from "react";
 import Checky from "../Checky";
 
-import { fireEvent, render, screen, act } from "@testing-library/react";
+import { fireEvent, render, screen, act, waitFor } from "@testing-library/react";
 import '@testing-library/jest-dom'
 
 
@@ -48,6 +48,8 @@ describe.only("Checky", () => {
 
             // expect(await screen.findByLabelText("true")).toBeInTheDocument();
             expect(await screen.findByLabelText("true", {}, { timeout: 2000 })).toBeInTheDocument();
+            // await waitFor(() => screen.getByLabelText("true"), { timeout: 2000 });
+
             // screen.debug()
         });
     })
