@@ -21,6 +21,7 @@ describe("Fetchy", () => {
 
             // screen.debug();
             expect(screen.getByText("Loading")).toBeInTheDocument();
+            // await waitFor(() => screen.getByText('Loading'), { timeout: 3000 })
 
             act(() => {
                 jest.advanceTimersByTime(3000);
